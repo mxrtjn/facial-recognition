@@ -14,8 +14,8 @@ for fold in os.listdir(dataSetPath):
     for file in os.listdir(os.path.join(dataSetPath, fold)):
         if not os.path.isdir(os.path.join(dataSetPath, fold, file)):
             counterFile = counterFile + 1
-            os.rename(os.path.join(dataSetPath, fold, file), os.path.join(dataSetPath, fold, fold + '-' + str(counter) + '.' + str(counterFile) + '.jpg'))
-    os.rename(os.path.join(dataSetPath, fold), os.path.join(dataSetPath, str(counter) + '-' + fold))
+            os.rename(os.path.join(dataSetPath, fold, file), os.path.join(dataSetPath, fold, str(counter) + '.' + str(counterFile) + '-' + fold + '.jpg'))
+    os.rename(os.path.join(dataSetPath, fold), os.path.join(dataSetPath, str(counter) + '-' + fold)) #renaming folder
     #        print('   ' + file)
     #onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 
