@@ -1,0 +1,9 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dataSets photos
+/dataSet
+/dataSet2
+
+# dependencies
+/.idea
+/trainer
